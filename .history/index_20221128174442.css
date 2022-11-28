@@ -22,7 +22,7 @@
   margin-right: 5rem;
 }
 
-#nav-links a {
+#nav-links p {
     display: flex;
     margin-right: 1.5rem;
     cursor: pointer;
@@ -42,7 +42,7 @@
   margin: 2rem 0 0 0;
 }
 
-#error-check-for-angles{
+.error-check-for-angles{
   background-color: yellow;
   display: none;
   padding: 0.5rem;
@@ -59,29 +59,7 @@ input {
   border-radius: 5px;
   padding: 5px;
 }
-
-/* For Quiz page */
-
-.question-container{
-  display: flex;
-  flex-direction: column;
-  width: 50vw;
-  margin: auto;
-  padding: 10px;
-
-}
-.question-container p{
-  text-align: left;
-  margin-top: 2rem;
-  padding-bottom: 10px;
-}
-.question-container .quiz-option{
-  margin-top: 5px;
-}
-
-
-
-#check-btn, #submit-btn {
+#check-btn {
   margin: auto;
   text-align: center;
   margin-top: 2rem;
@@ -92,7 +70,7 @@ input {
   border-radius: 5px;
 }
 #result-display {
-    display: none;
+    display: flex;
     padding-top: 1rem;
     font-style: italic;
     margin: auto;

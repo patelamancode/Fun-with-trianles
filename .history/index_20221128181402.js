@@ -11,9 +11,9 @@ const errorForInputs = document.querySelector('#error-check-for-angles');
 // }
 function showOutputMessage(msg){
     output.style.display = "flex";
-    output.innerText = msg;
+    output.innerHTML = msg;
 }
-// For Is triangle : 
+
 function calculateSumOfAngles(input1,input2,input3){
     const sumOfAngles = input1 +input2 +input3;
     if(sumOfAngles === 180){
@@ -22,6 +22,7 @@ function calculateSumOfAngles(input1,input2,input3){
         showOutputMessage("Please enter some valid inputs to form a triangle 🤪");
     }
 }
+
 function isTriangle(){
     var num1 = Number(angle1.value);
     var num2 = Number(angle2.value);
@@ -32,10 +33,6 @@ function isTriangle(){
         calculateSumOfAngles(num1,num3,num3);
     }
 }
- 
-// For Quiz :
-
-
 
 
 

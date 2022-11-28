@@ -71,17 +71,13 @@ input {
 
 }
 .question-container p{
-  text-align: left;
-  margin-top: 2rem;
-  padding-bottom: 10px;
-}
-.question-container .quiz-option{
-  margin-top: 5px;
+  margin: 0;
+  padding: 0;
 }
 
 
 
-#check-btn, #submit-btn {
+#check-btn {
   margin: auto;
   text-align: center;
   margin-top: 2rem;

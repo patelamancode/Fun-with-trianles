@@ -72,8 +72,7 @@ input {
 }
 .question-container p{
   text-align: left;
-  margin-top: 2rem;
-  padding-bottom: 10px;
+  margin-top: 1.5rem;
 }
 .question-container .quiz-option{
   margin-top: 5px;
@@ -81,7 +80,7 @@ input {
 
 
 
-#check-btn, #submit-btn {
+#check-btn {
   margin: auto;
   text-align: center;
   margin-top: 2rem;
