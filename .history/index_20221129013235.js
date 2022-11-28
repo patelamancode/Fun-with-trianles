@@ -12,21 +12,28 @@ function showOutputMessage(msg){
  
 function calculateSumOfAngles(input1,input2,input3){
     let sumOfAngles = input1 + input2 + input3;
+    console.log(sumOfAngles);
     if(sumOfAngles === 180){
         showOutputMessage("Yeah..🤗This is a triangle");
     }else showOutputMessage("Please enter some valid inputs to form a triangle 🤪");
 }
 function isTriangle(){
-    let num1 = Number(angle1.value);
-    let num2 = Number(angle2.value);
-    let num3 = Number(angle3.value);
+    var num1 = Number(angle1.value);
+    var num2 = Number(angle2.value);
+    var num3 = Number(angle3.value);
     if(!num1 || !num2 || !num3){
         showOutputMessage("Please make sure about all inputs as per mention format");
     }else {
-        calculateSumOfAngles(num1,num2,num3);
+        calculateSumOfAngles(num1,num3,num3);
     }
 }
+ 
+
+
+
+
+
 
 button.addEventListener('click', function(){
     isTriangle();
-});
+})

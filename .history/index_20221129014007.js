@@ -12,6 +12,7 @@ function showOutputMessage(msg){
  
 function calculateSumOfAngles(input1,input2,input3){
     let sumOfAngles = input1 + input2 + input3;
+    console.log(sumOfAngles);
     if(sumOfAngles === 180){
         showOutputMessage("Yeah..🤗This is a triangle");
     }else showOutputMessage("Please enter some valid inputs to form a triangle 🤪");
@@ -23,6 +24,7 @@ function isTriangle(){
     if(!num1 || !num2 || !num3){
         showOutputMessage("Please make sure about all inputs as per mention format");
     }else {
+        console.log(num1,num2,num3);
         calculateSumOfAngles(num1,num2,num3);
     }
 }
