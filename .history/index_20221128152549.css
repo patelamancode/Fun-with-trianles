@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    background-color: yellow;
+}
+
+
+
+#main-container {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 10px;
+    text-align: center;
+  }
