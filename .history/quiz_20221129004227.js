@@ -3,27 +3,27 @@ const submitButton = document.querySelector('#submit-btn');
 const output = document.querySelector('#result-display');
 const correctAnswerArray = ["90°", "right angled"];
 
-function displayOutputMessage(msg){
-    output.innerText = msg;
-    output.style.display = "flex";
-}
+
 
 
 function calculateScore(){
     let score = 0;
-    let i = 0;
+    let index = 0;
     const data = new FormData(questions);
     for(let dataValue of data.values()){
-        if(dataValue === correctAnswerArray[i]){
+        console.log(dataValue);
+        if(dataValue[index] === correctAnswerArray[0]){
+            console.log("Yeah you got it");
             score++;
-            i++;
         }else{
             console.log("Sorry!!");
-            i++;
         }
     }
-    return displayOutputMessage(`Hey your final score is ${score * 10} out of 20 😊`)
+    console.log(score);
 }
+
+
+
 
 
 submitButton.addEventListener('click', function(){

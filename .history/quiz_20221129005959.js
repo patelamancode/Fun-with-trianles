@@ -14,6 +14,7 @@ function calculateScore(){
     let i = 0;
     const data = new FormData(questions);
     for(let dataValue of data.values()){
+        console.log(dataValue);
         if(dataValue === correctAnswerArray[i]){
             score++;
             i++;
@@ -22,7 +23,8 @@ function calculateScore(){
             i++;
         }
     }
-    return displayOutputMessage(`Hey your final score is ${score * 10} out of 20 😊`)
+    console.log(typeof(score));
+    // return displayOutputMessage(`Hey your final score is ${score}`)
 }
 
 

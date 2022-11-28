@@ -3,10 +3,7 @@ const submitButton = document.querySelector('#submit-btn');
 const output = document.querySelector('#result-display');
 const correctAnswerArray = ["90°", "right angled"];
 
-function displayOutputMessage(msg){
-    output.innerText = msg;
-    output.style.display = "flex";
-}
+
 
 
 function calculateScore(){
@@ -14,7 +11,9 @@ function calculateScore(){
     let i = 0;
     const data = new FormData(questions);
     for(let dataValue of data.values()){
+        console.log(dataValue);
         if(dataValue === correctAnswerArray[i]){
+            console.log("Yeah you got it");
             score++;
             i++;
         }else{
@@ -22,8 +21,11 @@ function calculateScore(){
             i++;
         }
     }
-    return displayOutputMessage(`Hey your final score is ${score * 10} out of 20 😊`)
+    console.log(score);
 }
+
+
+
 
 
 submitButton.addEventListener('click', function(){
