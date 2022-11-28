@@ -11,9 +11,9 @@ function showOutputMessage(msg){
 
 function calculateArea(p, side1, side2, side3){
     const area = (Math.sqrt(p*(p-side1)*(p-side2)*(p-side3))).toFixed(2);
-    if(!side1 || !side2  || !side3){
+    if(!p || !side1 || !side2  || !side3){
         showOutputMessage("Please fill all mandatory fields for all side length")
-    } else showOutputMessage(`Hey!! the area for this triangle is : ${area} square unit 🎉`)
+    }
 }
 
 function showAreaOfTriangle(){
@@ -21,10 +21,9 @@ function showAreaOfTriangle(){
     const s2 = Number(sideTwo.value);
     const s3 = Number(sideThree.value);
     const perimeter = (s1+s2+s3)/2
-    if(!s1 || !s2  ||  !s3){
-        showOutputMessage("Ohh ☹️ Please fill all mandatory fields for each side")
-    } else calculateArea(perimeter, s1, s2, s3);
-
+    console.log(perimeter, s1, s2, s3);
+    console.log(typeof(perimeter, s1, s2, s3));
+    calculateArea(perimeter, s1, s2, s3);
 }
 
 button.addEventListener('click', function(){

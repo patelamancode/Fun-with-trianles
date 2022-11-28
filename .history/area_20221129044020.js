@@ -13,7 +13,7 @@ function calculateArea(p, side1, side2, side3){
     const area = (Math.sqrt(p*(p-side1)*(p-side2)*(p-side3))).toFixed(2);
     if(!side1 || !side2  || !side3){
         showOutputMessage("Please fill all mandatory fields for all side length")
-    } else showOutputMessage(`Hey!! the area for this triangle is : ${area} square unit 🎉`)
+    } else showOutputMessage(`Hey!! the area for this triangle is : ${area} 🎉`)
 }
 
 function showAreaOfTriangle(){
